@@ -15,12 +15,12 @@
             <h3>Les prénoms</h3>
         </section>
         <section class="search">
-            <form action="autocompletion.php" method="get" autocomplete="off">
+            <form action="autosearch.php" method="get" autocomplete="off">
                 <label for="search">Chercher un prénom:</label>
-                <input class="input" type="text" name="search" id="search">
+                <input id="entry" class="input" type="text" name="search" id="search">
                 <ul id="list">   
                 </ul>
-                <input class="sub" type="submit" value="Chercher (Ne fonctionne pas pour l'exo)">
+                <input class="sub" type="submit" value="Chercher">
             </form>
         </section>
         <section class="add">

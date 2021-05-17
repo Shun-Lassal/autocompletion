@@ -1,5 +1,5 @@
-$("#search" ).on( "keyup", function() {
-    let text = $("#search").val();
+$("#entry" ).on( "keyup", function() {
+    let text = $("#entry").val();
 
     if (text == '') {
         $('#list').empty();
@@ -13,12 +13,10 @@ $("#search" ).on( "keyup", function() {
         success: data => {
             let people = '';
             data.forEach(personne => {
-                let e = `<li>${personne.prenom}</li>`;
+                let e = `<li id="list"><a href="autosearch.php?search=${personne.prenom}">${personne.prenom}</a></li>`;
                 people += e;
             })
             $('#list').html(people);
-
         }
     })
 });
-

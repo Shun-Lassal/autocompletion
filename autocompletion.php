@@ -1,5 +1,4 @@
 <?php
-
 $dbh = new PDO('mysql:host=localhost;dbname=autocompletion', 'root', '');
 $entree = $_GET['text'];
 
@@ -10,5 +9,4 @@ if (!empty($entree)) {
     $stmt->execute();
     echo json_encode($stmt->fetchAll());
 }
-
 ?>

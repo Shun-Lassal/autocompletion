@@ -27,12 +27,13 @@ form {
     width:30vw;
     height:auto;
     margin:10px;
+    background-color: cadetblue;
+    box-shadow:0px 0px 12px 6px;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-color: cadetblue;
-    box-shadow:0px 0px 12px 6px;
+    z-index:1;
 }
 
 label {
@@ -61,14 +62,32 @@ ul li {
     border-radius:2px;
     margin:0px;
     padding:2px;
-    align-items:center;
     background-color:white;
     
+}
+
+ul {
+    position:relative;
+    z-index: unset;
+}
+
+ul#result li{
+    margin:30px;
 }
 
 ul, li {
     margin:0px;
     padding:0px;
+}
+
+li:hover {
+    background-color:lightgrey;
+    
+}
+
+a {
+    color:black;
+    text-decoration:none;
 }
 
 section.search {
@@ -82,3 +101,4 @@ section.add {
     box-shadow:0px 0px 12px 6px;
     margin:20px;
 }
+
